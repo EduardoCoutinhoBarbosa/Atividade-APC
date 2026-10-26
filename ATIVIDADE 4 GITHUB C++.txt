@@ -1,0 +1,21 @@
+ATIVIDADE 4 GITHUB C++
+
+#include <stdio.h>
+
+int main() {
+    int passos, totalPassos = 0, horas = 0;
+
+    printf("--- META DIARIA: 10.000 PASSOS ---\n\n");
+
+    while (totalPassos < 10000) {
+        horas++;
+        printf("Digite a quantidade de passos dados na %d a. hora: ", horas);
+        scanf("%d", &passos);
+        totalPassos += passos;
+    }
+
+    printf("PARABENS! Voce atingiu a meta com um total de %d passos!\n", totalPassos);
+    printf("Tempo necessario: %d horas.\n", horas);
+
+    return 0;
+}

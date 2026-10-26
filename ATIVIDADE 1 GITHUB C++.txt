@@ -1,0 +1,22 @@
+ATIVIDADE 1 GITHUB C++
+
+#include <stdio.h>
+
+int main() {
+    int consumo, soma = 0;
+
+    for (int i = 1; i <= 5; i++) {
+        printf("Digite o consumo de agua do morador %d em m3: ", i);
+        scanf("%d", &consumo);
+        soma += consumo;
+
+        if (consumo <= 20)
+            printf("O consumo do morador %d esta dentro da media\n\n", i);
+        else
+            printf("O consumo do morador %d esta acima da media\n\n", i);
+    }
+
+    printf("A media geral de consumo de agua e: %.2f m3\n", soma / 5.0);
+
+    return 0;
+}
